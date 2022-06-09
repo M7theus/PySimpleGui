@@ -1,10 +1,10 @@
 import PySimpleGUI as sg
-sg.theme('DarkAmber')
+sg.theme()
 layout = [
+    [sg.Titlebar('Customized Titlebar Window')],
     [sg.Text('Some text on Row 1')],
     [sg.Text('Enter something on Row 2'), sg.InputText(),sg.FileBrowse('Buscar')],
-    [sg.Button('Ok'), sg.Button('Cancel'),sg.Button('Teste')],
-    [sg.Titlebar()]
+    [sg.Button('Ok'), sg.Button('Cancel'),sg.Button('Teste')]
 ]
 
 window = sg.Window('Teste', layout)
