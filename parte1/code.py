@@ -1,5 +1,5 @@
 import PySimpleGUI as sg
-sg.class()
+
 layout = [
     [sg.Titlebar('Primeiro código')],
     [sg.Text('Meu primeiro FrameWork',text_color='black')],
