@@ -1,10 +1,10 @@
 import PySimpleGUI as sg
-sg.theme()
+sg.class()
 layout = [
     [sg.Titlebar('Primeiro código')],
     [sg.Text('Meu primeiro FrameWork',text_color='black')],
-    [sg.Text('Digite algo para realizar a busca'), sg.InputText(),sg.FileBrowse('Buscar')],
-    [sg.Button('Ok'), sg.Button('Cancel'),sg.Button('Mais')]
+    [sg.Text('Digite algo para realizar a busca'), sg.InputText(tooltip=None),sg.FileBrowse('Buscar')],
+    [sg.Button('Ok',tooltip='teste',focus=True), sg.Button('Cancel'),sg.Button('Mais',focus=True)]
 ]
 
 window = sg.Window('Teste', layout)
