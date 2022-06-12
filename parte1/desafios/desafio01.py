@@ -2,7 +2,7 @@ import PySimpleGUI as sg
 
 layout = [
     [sg.Text('Programa')],
-    [sg.Text('Digite algo: ')]
+    [sg.Text('Digite algo: '),sg.Inputext()]
     [sg.Button('Avançar')]
 ]
 
